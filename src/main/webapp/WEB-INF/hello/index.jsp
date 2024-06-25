@@ -1,12 +1,13 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
-<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <html>
 <head>
-    <title>Title</title>
+    <title>ログインページ</title>
 </head>
 <body>
-    <p>Hello World!</p>
-    <c:set var="hello" value="${3 + 12 / 5}" />
-    <c:out value="${hello}" />
+<form action="Login" method="post">
+    ユーザー名：<input type="text" name="name"><br>
+    パスワード：<input type="password" name="pass"><br>
+    <input type="submit" value="ログイン">
+</form>
 </body>
 </html>
